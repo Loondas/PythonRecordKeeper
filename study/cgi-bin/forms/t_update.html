@@ -1,0 +1,43 @@
+{"zName":"%name%", "zEmail":"%email%", "zNumber":"%address%"}
+<html>
+<head>
+<title>Edit Data</title>
+<link rel="stylesheet" type="text/css" href="../../styles.css">
+</head>
+<body>
+<h1>User Data: Update</h1>
+
+<form action='edit.py' method="POST">
+<fieldset class ='outter'>
+    
+	<fieldset>
+      <label>Lab Number:</label><br/>
+      <select type='text' name='zNumber' value='%address%'><br/>
+        </select>
+    </fieldset>
+    <fieldset>
+      <label>Lab Name:</label><br/>
+      <input type='text' name='zName' value='%name%'><br/>
+    </fieldset>
+    <fieldset>
+      <label>Lab Email:</label><br/>
+      <input type='text' name='zEmail' value='%email%'><hr/>
+    </fieldset>
+    
+  <input class='up' type='submit' value='Edit'>
+  <button class='up' name='update' value='8'>Default Values</button>
+</fieldset>
+<hr/><br/><hr/>
+
+</form>
+<!-- <script>
+function getValue(zed) {
+	var db = openDatabase('../../sqlcommandsnew.sqlt3', '3.0', 'foo')
+	db.transaction(function (tx) {
+	tx.executeSql('SELECT name FROM employ WHERE number = zed')
+	});
+	return zed;
+}
+</script> -->
+</body>
+</html>

@@ -1,0 +1,32 @@
+{"zNumber":"%address%", "zName":"%name%", "zEmail":"%email%"}
+<html>
+<head>
+<title>Enter Data</title>
+<link rel="stylesheet" type="text/css" href="../../styles.css">
+</head>
+<body>
+<h1>User Data: Submit</h1>
+
+<form action='enter.py' method="POST">
+<fieldset class ='outter'>
+    
+	<fieldset>
+      <label>Lab Number:</label><br/>
+      <input type='text' name='zNumber' value='%address%'><br/>
+    </fieldset>
+    <fieldset>
+      <label>Lab Name:</label><br/>
+      <input type='text' name='zName' value='%name%'><br/>
+    </fieldset>
+    <fieldset>
+      <label>Lab Email:</label><br/>
+      <input type='text' name='zEmail' value='%email%'><hr/>
+    </fieldset>
+    
+  <input class = 'up' type='submit' value='Update'>
+</fieldset>
+<hr/><br/><hr/>
+
+</form>
+</body>
+</html>
